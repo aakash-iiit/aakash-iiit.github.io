@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet"> 
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="styles/main copy.css">
+       
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        
+    </head>
+    <body class="univ" onload="display_time()">
+       
+        <script  src="scripts/main.js" defer></script>
+        <div class = "grid-area">
+          <!--  <div class="navbar-area"> -->
+                <ul class = "navbar-list">
+                  <li><h2>  <a class="navbar-list-item" id="navbar-home" href="#home" onclick="populate('content-home','navbar-home')"><i class="bx bxs-home"></i><span>Home</span></a></h2></li>
+                    <li><h2>  <a class="navbar-list-item" id="navbar-education" href="#education" onclick="populate('content-education','navbar-education')"><i class="bx bxs-book"></i><span>Education</span></a></h2></li>
+                  <li><h2>  <a class="navbar-list-item" id="navbar-experience" href="#experience" onclick="populate('content-experience','navbar-experience')"><i class="bx bxs-building"></i><span>Experience</span></a></h2></li>
+                    <li><h2>  <a class="navbar-list-item" id="navbar-contact" href="#contact" onclick="populate('content-contact','navbar-contact')"><i class="bx bxs-phone"></i><span>Contact</span></a></h2></li>
+                    <li><h2>  <a class="navbar-list-item" id="navbar-picture" href="#picture" onclick="populate('content-picture','navbar-picture')"><i class="bx bxs-face"></i><span>Picture</span></a></h2> </li>                          
+                             
+                                       
+                </ul>
+         <!--  </div>--> 
+            <div class="picture-theme-area">
+                
+                <div class="picture-area">
+                    <img src="assets/images/IMG_9917 copy.jpg" alt="profile image">
+                </div>
+                <div class="theme-area">
+                   
+                    <a href="https://drive.google.com/file/d/1Dgm1S5wT8nImgPKEB_EopxZsDw13RN-m/view?usp=sharing" target="_blank"><i class='bx bxs-file-doc' ></i></a>
+                    <a href="https://www.linkedin.com/in/aakash-singh06/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/aakash-iiit" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:singh.aakash.official@gmail.com" target="_blank"><i class='bx bx-mail-send'></i></a>
+                    
+                </div>
+                <div class="time-area">
+                    <p id="display-date"></p>
+                </div>
+            </div>
+            <div class="content-area">
+                <div class="under-content-area" id="content-home">
+                    <h1>Hi I Am Aakash<br>Welcome to my peronal website...</h1>
+
+                </div>
+
+                <div class="under-content-area" id="content-education">
+                    <table>
+                        <tr><th colspan="2">M.Tech in Computer Science Engineering (Currently Pursuing)</th></tr>
+                        <tr></tr>
+                    <tr>
+                        <td><img src="https://www.iiit.ac.in/img/iiit-new.png" alt="sorry!!!" class="college-image-1"></td>
+                    <td><a class="college-link"  href="https://www.iiit.ac.in" target="_blank">International Institue of Information Technology, Hyderabad</a></td>
+                </tr>   
+                <tr></tr>
+                <tr><th colspan="2">B.Tech in Computer Science Engineering </th></tr>
+                <tr></tr>                 
+                    <td><img src="http://webmail.juet.ac.in/domcfg.nsf/a5f213b09e138b72052566b20068aa38/$Body/0.482?OpenElement&FieldElemFormat=gif" alt="sorry!!!" class="college-image-2"></td>
+                    <td><a class="college-link"  href="https://www.juet.ac.in/" target="_blank">Jaypee University Of Engineering and Technology</a></td>
+                </tr>
+                </table>
+                </div>
+
+                <div class="under-content-area" id="content-experience">
+                    <h2>Programmer Analyst in Cognizant technology solutions</h2>
+                    <li>
+                        <ul>Collected and examined the device state meta data for important insights such as capacity ,outage, location , model
+                            type etc.</ul>
+                        <ul>To prevent downtime, using the above data conceptualized outage predictors using various machine learning
+                            algorithms (random forest, Extreme Gradient Boost, Logistic Regression) on rapid miner as well as scikit-learn in
+                            python.</ul>
+                        <ul>Programmed a load balancer module for influxdb containers (docker) using nginx to maintain data availability in case
+                            one of the container goes down. The above module also tackled data redundancy.</ul>
+                        <ul>Built an anomaly detection engine from scratch using python to replace kapacitor due to its non-reliable performance
+                            and lack of parameter control. The above engine was able to calculate and flag anomalies in real time and send them
+                            to an alert engine.</ul>
+                        <ul>Improved the above engine so that it may handle multiple types of data elements within a single stream. The
+                            application used multi-threading to handle these different types and also maintain near to real time responsiveness.</ul>
+                    </li>
+                </div>
+
+                <div class="under-content-area" id="content-contact">
+                    <h2>You can reach out to me via following</h2>
+                    <a class="content-button" href="https://www.linkedin.com/in/aakash-singh06/" target="_blank"><i class='bx bxl-linkedin-square'></i>Linkedin</a>
+                        <a class="content-button" href="mailto:singh.aakash.official@gmail.com" target="_blank"><i class='bx bx-mail-send'></i>Mail</a>
+                    <h2>You can check out some of my work at</h2>
+                        <a class="content-button" href="https://github.com/aakash-iiit" target="_blank"><i class='bx bxl-github'></i>Github</a>
+                   
+                    <h2>My Resume</h2>
+                       <a class="content-button" href="https://drive.google.com/file/d/1Dgm1S5wT8nImgPKEB_EopxZsDw13RN-m/view?usp=sharing" target="_blank"> Resume<i class='bx bxs-file-doc' ></i></a>
+             <!--  <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="aakash-singh06" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/aakash-singh06?trk=profile-badge">Aakash Singh</a></div>--> 
+              
+              
+                </div>
+
+                <div class="under-content-area" id="content-picture"> 
+                    <img id = "profile-image"src="assets/images/IMG_9917 copy.jpg" alt="profile image">
+                </div>
+
+                <div class="under-content-area" id="content-about">about
+                    <a href="https://drive.google.com/file/d/1Dgm1S5wT8nImgPKEB_EopxZsDw13RN-m/view?usp=sharing" target="_blank"><i class='bx bxs-file-doc' ></i></a>
+                    <a href="https://www.linkedin.com/in/aakash-singh06/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/aakash-iiit" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:singh.aakash.official@gmail.com" target="_blank"><i class='bx bx-mail-send'></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
